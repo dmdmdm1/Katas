@@ -17,3 +17,21 @@ function checkExam(array1, array2) {
   }
   return score;
 }
+
+
+function checkExam(array1, array2) {
+  array1.forEach((correctAnswer, idx) => {
+    let actualAnswer === array2[idx]
+    if (actualAnswer === "") {
+      return;
+    }
+    if (actualAnswer === correctAnswer) {
+      resultScore += 4
+    } else {
+      resultScore -= 1
+    }
+
+    return resultScore < 0 ? 0 : resultScore
+
+  })
+}
